@@ -52,9 +52,11 @@
   "devDependencies": {
     "@babel/core": "^7.14.6",
     "@storybook/addon-a11y": "^6.4.19",
+    "@storybook/addon-bench": "^0.0.2",
     "@storybook/addon-essentials": "^6.4.19",
     "@storybook/addon-interactions": "^6.4.19",
     "@storybook/addon-storyshots": "^6.4.19",
+    "@storybook/bench": "^0.6.7",
     "@storybook/builder-webpack5": "^6.4.19",
     "@storybook/jest": "^0.0.9",
     "@storybook/manager-webpack5": "^6.4.19",
