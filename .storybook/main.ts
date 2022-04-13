@@ -20,7 +20,7 @@ module.exports = {
   }),
 
   features: {
-    storyStoreV7: false,
+    storyStoreV7: true,
     buildStoriesJson: true,
     interactionsDebugger: true,
   },
