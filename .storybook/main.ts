@@ -26,6 +26,20 @@ module.exports = {
   },
   framework: '@storybook/react',
   core: {
-    builder: 'webpack5',
+    builder: '@storybook/builder-vite',
+  },
+  async viteFinal(config) {
+    // Annoying way to add babel plugin,
+    // until https://github.com/storybookjs/builder-vite/issues/286 is fixed
+    config.plugins = [
+      ...config.plugins.filter((plugin) => {
+        return !(Array.isArray(plugin) && plugin[0].name === 'vite:react-babel')
+      }),
+      require('@vitejs/plugin-react')({
+        exclude: [/\.stories\.(t|j)sx?$/, /node_modules/],
+        babel: { plugins: ['babel-plugin-open-source'] },
+      }),
+    ]
+    return config
   },
 }
