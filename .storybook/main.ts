@@ -18,20 +18,6 @@ module.exports = {
     ...options,
     plugins: [...options.plugins, 'babel-plugin-open-source'],
   }),
-  webpackFinal: (config) => {
-    // Preset CRA does not take these into consideration, gotta do it manually
-    return {
-      ...config,
-      cache: {
-        type: 'filesystem',
-      },
-      experiments: {
-        lazyCompilation: {
-          entries: false,
-        },
-      },
-    }
-  },
   features: {
     storyStoreV7: true,
     buildStoriesJson: true,
@@ -41,7 +27,6 @@ module.exports = {
   core: {
     builder: {
       name: 'webpack5',
-      // don't work in this project, due to CRA
       options: {
         lazyCompilation: true,
         fsCache: true,
