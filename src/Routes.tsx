@@ -1,4 +1,4 @@
-import { useLayoutEffect } from 'react'
+import React, { useLayoutEffect } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
 
 import { CategoryListPage } from './pages/CategoryListPage'
@@ -8,7 +8,7 @@ import { HomePage } from './pages/HomePage'
 import { CheckoutPage } from './pages/CheckoutPage'
 import { SuccessPage } from './pages/SuccessPage'
 
-export const AppRoutes: React.FC = ({ children }) => {
+export const AppRoutes: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
   const location = useLocation()
   // Scroll to top when a path changes
   useLayoutEffect(() => {

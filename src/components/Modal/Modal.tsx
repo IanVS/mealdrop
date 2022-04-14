@@ -11,6 +11,7 @@ import { ModalContent, TopBar, Backdrop } from './Modal.styles'
 type ModalProps = {
   isOpen: boolean
   onClose: () => void
+  children?: React.ReactNode
 }
 
 export const Modal: React.FC<ModalProps> = ({ children, isOpen, onClose }) => {

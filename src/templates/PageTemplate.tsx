@@ -10,6 +10,7 @@ const Container = styled.div`
 
 type PageTemplateProps = {
   type?: 'default' | 'sticky-header' | 'basic'
+  children?: React.ReactNode
 }
 
 export const PageTemplate: React.FC<PageTemplateProps> = ({ type = 'default', children }) => {

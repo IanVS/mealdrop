@@ -13,7 +13,9 @@ export default {
   },
 } as ComponentMeta<typeof PageTemplate>
 
-const DummyComponent: React.FC = ({ children }) => <div style={{ padding: 60 }}>{children}</div>
+const DummyComponent: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
+  <div style={{ padding: 60 }}>{children}</div>
+)
 
 const Template: ComponentStory<typeof PageTemplate> = (args) => <PageTemplate {...args} />
 

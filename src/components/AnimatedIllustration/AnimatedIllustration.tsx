@@ -20,6 +20,7 @@ export const AnimatedIllustration = ({ animation }: AnimatedIllustrationProps) =
 
   return (
     <span className="chromatic-ignore">
+      {/* @ts-ignore */}
       <Lottie style={{ minHeight: 450, maxWidth: 450 }} play loop animationData={animationData} />
     </span>
   )

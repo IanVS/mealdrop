@@ -48,6 +48,7 @@ type FooterCardProps = {
     name: string
     href: string
   }[]
+  children?: React.ReactNode
 }
 
 export const FooterCard: React.FC<FooterCardProps> = ({ title, links = [], children }) => (

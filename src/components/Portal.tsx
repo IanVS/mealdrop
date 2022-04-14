@@ -4,6 +4,7 @@ import { createPortal } from 'react-dom'
 
 type Props = {
   selector: string
+  children?: React.ReactNode
 }
 
 export const Portal: React.FC<Props> = ({ children, selector }) => {
