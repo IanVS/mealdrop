@@ -96,6 +96,7 @@ export const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const { color } = useTheme()
+  console.log(Date.now() / 1000)
 
   return (
     <StyledButton
@@ -109,8 +110,7 @@ export const Button: React.FC<ButtonProps> = ({
       {icon && (
         <Icon color={clear ? color.primaryText : color.buttonText} size={iconSize} name={icon} />
       )}
-      {icon && children && <Spacer />}
-      {children}
+      {icon && children && <Spacer />}5{children}
     </StyledButton>
   )
 }
