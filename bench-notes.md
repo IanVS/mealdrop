@@ -1,0 +1,1 @@
+For the warm tests, I ran a manual `yarn storybook` and allowed the browser page to fully load, which triggered the compilation for that default story. I then ran a benchmark to pre-warm the manager cache as well, and once all that was done, started the warm benchmark runs.

@@ -1,0 +1,21 @@
+{
+  "install": { "time": { "total": 0 }, "size": { "total": 0 } },
+  "start": {
+    "time": {
+      "managerWebpack": 11000,
+      "previewWebpack": 24000,
+      "managerRender": 27701,
+      "previewRender": 29147
+    },
+    "size": {}
+  },
+  "build": { "time": { "build": 47967 }, "size": {} },
+  "browse": {
+    "time": { "managerRender": 874, "previewRender": 1477 },
+    "size": {
+      "total": 11862,
+      "manager": { "total": 2386, "main": 2, "runtime": 7, "vendors": 2377, "uiDll": 0 },
+      "preview": { "total": 2752, "main": 331, "runtime": 10, "vendors": 2411, "docsDll": 0 }
+    }
+  }
+}
